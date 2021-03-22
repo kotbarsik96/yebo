@@ -1,0 +1,1 @@
+let swiper=new Swiper(".swiper-container",{pagination:{el:".swiper-pagination",type:"bullets",clickable:!0},keyboard:{enabled:!0},effect:"coverflow",coverflowEffect:{rotate:110,slideShadows:!1}});
