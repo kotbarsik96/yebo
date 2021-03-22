@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>YEBO</title>
 <link rel="stylesheet" href="../css/styles.css">
-<link rel="shortcut icon" href="../images/icons/favicon.ico"></head>
+<link rel="shortcut icon" href="../images/icons/favicon.ico">    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
 <body class="body">
 
     <div class="wrapper">
@@ -120,7 +121,7 @@
             </div>
 
             <div class="topic-1 work">
-                <div class="topic">
+                <div class="topic swiper-container">
                     <div class="topic__icon">
                         <img src="../images/icons/twitter.png" alt="">
                     </div>
@@ -128,9 +129,19 @@
                         <h2>AOD New York @aod</h2>
                         <span>/ 35 min</span>
                     </div>
-                    <div class="topic__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+                    <div class="topic__text swiper-wrapper">
+                        <div class="swiper-slide">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+                        </div>
+                        <div class="swiper-slide">
+                            2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+                        </div>
+                        <div class="swiper-slide"> 
+                            3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+                        </div>
                     </div>
+                    
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
 
@@ -197,23 +208,23 @@
                 </div>
                 </div>
                 <div class="footer__info">
-                <div class="info__container">
-                    <div class="info__address">
-                        <p>AOD New York</p>
-                        <p>2250 Lexington Avenue</p>
-                        <p>New York, NY 10035  - info@domain.com</p>
-                    </div>
-                    <div class="info__icons">
-                        <div class="icons__container">
-                            <a href="#" class="icons__item"><img src="../images/icons/twitter-footer.png" alt=""></a>
-                            <a href="#" class="icons__item"><img src="../images/icons/facebook-footer.png" alt=""></a>
-                            <a href="#" class="icons__item"><img src="../images/icons/p-footer.png" alt=""></a>
+                    <div class="info__container">
+                        <div class="info__address">
+                            <p>AOD New York</p>
+                            <p>2250 Lexington Avenue</p>
+                            <p>New York, NY 10035  - info@domain.com</p>
+                        </div>
+                        <div class="info__icons">
+                            <div class="icons__container">
+                                <a href="https://twitter.com/" class="icons__item"><img src="../images/icons/twitter-footer.png" alt=""></a>
+                                <a href="https://www.facebook.com/" class="icons__item"><img src="../images/icons/facebook-footer.png" alt=""></a>
+                                <a href="https://www.pinterest.ru/" class="icons__item"><img src="../images/icons/p-footer.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="info__sign">
+                            <p>Handicrafted by</p>
                         </div>
                     </div>
-                    <div class="info__sign">
-                        <p>Handicrafted by</p>
-                    </div>
-                </div>
                 </div>
             </div>
         </footer>
@@ -230,6 +241,8 @@
     <script src="../js/scrollTo.js"></script>
     <script src="../js/shop-now.js"></script>
     <script src="../js/fixed-content.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
 
     <!-- =============================================<СКРИПТЫ>========================================= -->
 
