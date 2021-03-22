@@ -366,6 +366,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 80%;
   font-family: "Lato";
 }
 @media (max-width: 992px) {
@@ -413,6 +414,8 @@ img {
   color: #848789;
   line-height: 30px;
   font-style: italic;
+  text-align: center;
+  flex: 0 0 13%;
 }
 @media (min-width: 540px) {
   .topic__text {
@@ -440,8 +443,9 @@ img {
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  min-height: 470px;
+  height: 470px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 @media (min-width: 768px) {
@@ -732,16 +736,34 @@ img {
   position: relative;
 }
 .footer__email {
-  min-height: 470px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .footer__info {
-  min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (max-height: 700px) {
+  .footer .footer__email {
+    max-height: 350px;
+    margin: 10px 0 0 0;
+  }
+  .footer .footer__info {
+    height: 120px;
+  }
+  .footer .footer__info .info__icons {
+    margin: 20px 0 0 0;
+  }
+}
+@media (min-height: 701px) {
+  .footer .footer__email {
+    min-height: 470px;
+  }
+  .footer .footer__info {
+    min-height: 250px;
+  }
 }
 
 .email__container {
@@ -875,7 +897,7 @@ img {
 }
 @media (max-width: 767px) {
   .info__container {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 1130px) {
@@ -892,6 +914,17 @@ img {
 @media (min-width: 1130px) {
   .info__container div:first-child, .info__container div:last-child {
     flex: 0 0 290px;
+  }
+}
+@media (max-width: 767px) {
+  .info__container div:nth-child(2) {
+    order: 3;
+  }
+  .info__container div:last-child {
+    order: 2;
+  }
+  .info__container div:nth-child(2), .info__container div:last-child {
+    flex: 0 0 49%;
   }
 }
 .info__address {
@@ -981,4 +1014,15 @@ img {
 }
 .icons__item:nth-child(2) {
   margin: 0 15px;
+}
+
+.topic.swiper-container .swiper-pagination-bullet {
+  background: #fff;
+  border: 1px solid #000;
+  width: 10px;
+  height: 10px;
+}
+.topic.swiper-container .swiper-pagination-bullet-active {
+  background: #a9afb3;
+  border: 1px solid #a9afb3;
 }
