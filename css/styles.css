@@ -712,6 +712,9 @@ img {
   }
 }
 
+.footer.__fixed {
+  min-height: 800px;
+}
 .footer.__fixed .footer__container {
   position: fixed;
   bottom: 0;
@@ -722,7 +725,6 @@ img {
   font-family: "Lato";
   position: relative;
   width: 100%;
-  min-height: 800px;
   z-index: -1;
 }
 .footer__container {
